@@ -14,7 +14,7 @@ public class CatScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isAlive)
+        if(Input.GetKeyDown(KeyCode.Space) && isAlive && rb.position.y < 0.77f)
         {
             rb.linearVelocity = Vector2.up * 10f;
         }
