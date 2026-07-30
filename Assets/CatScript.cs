@@ -14,7 +14,7 @@ public class CatScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            rb.linearVelocity = Vector2.up * 5f;
+            rb.linearVelocity = Vector2.up * 10f;
         }
     }
 }

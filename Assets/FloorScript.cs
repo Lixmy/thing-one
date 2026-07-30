@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class FloorScript : MonoBehaviour
 {
-    public float moveSpeed = 5;
+    public float moveSpeed = 3;
+    public float deadZone = -15;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,5 +14,9 @@ public class FloorScript : MonoBehaviour
     void Update()
     {
         transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
+        if(transform.position.x < deadZone)
+        {
+            Destroy(gameObject);
+        }
     }
 }
