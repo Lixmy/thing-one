@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class FloorScript : MonoBehaviour
 {
-    public float moveSpeed = 3;
-    public float deadZone = -15;
+    public float moveSpeed = 5;
+    public float deadZone = -25.19f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

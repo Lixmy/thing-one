@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class ObstacleScript : MonoBehaviour
 {
-    public float moveSpeed = 3;
+    public float moveSpeed = 5;
     public float deadZone = -15;
-    public ManagementScript manage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        manage = GameObject.FindGameObjectWithTag("Logic").GetComponent<ManagementScript>();
+        
     }
 
     // Update is called once per frame

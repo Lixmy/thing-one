@@ -3,17 +3,10 @@ using UnityEngine.SceneManagement;
 public class ManagementScript : MonoBehaviour
 {
     public GameObject gameOverScreen;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public FloorScript Floor;
+    public ObstacleScript Obstacle;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     public void restartGame()
     {

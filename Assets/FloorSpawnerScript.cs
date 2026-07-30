@@ -3,29 +3,19 @@ using UnityEngine;
 public class FloorSpawnerScript : MonoBehaviour
 {
     public GameObject Floor;
-    public float spawnRate = 3;
-    private float timer = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Instantiate(Floor, new Vector3(3.81f, -2.99f, 0f), transform.rotation);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timer < spawnRate)
-        {
-            timer += Time.deltaTime;
-        }
-        else
-        {
-            SpawnFloor();
-            timer = 0;
-        }
+        
     }
     
-    void SpawnFloor()
+    public void SpawnFloor()
     {
         Instantiate(Floor, transform.position, transform.rotation);
     }
