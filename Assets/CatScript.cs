@@ -5,6 +5,8 @@ public class CatScript : MonoBehaviour
     public Rigidbody2D rb;
     public ManagementScript manage;
     public bool isAlive = true;
+
+    public Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,6 +19,11 @@ public class CatScript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && isAlive && rb.position.y < 0.77f)
         {
             rb.linearVelocity = Vector2.up * 10f;
+            animator.SetBool("Jumping", true);
+        }
+        else
+        {
+            animator.SetBool("Jumping", false);
         }
     }
 

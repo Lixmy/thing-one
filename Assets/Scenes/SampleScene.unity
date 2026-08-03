@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 730533253}
   - component: {fileID: 730533254}
   - component: {fileID: 730533255}
-  - component: {fileID: 730533257}
+  - component: {fileID: 730533256}
   m_Layer: 3
   m_Name: Cat
   m_TagString: Player
@@ -706,6 +706,7 @@ MonoBehaviour:
   rb: {fileID: 730533253}
   manage: {fileID: 27994940}
   isAlive: 1
+  animator: {fileID: 730533256}
 --- !u!61 &730533255
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -752,7 +753,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.22423857, y: 0.20974031}
   m_EdgeRadius: 0
---- !u!95 &730533257
+--- !u!95 &730533256
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
