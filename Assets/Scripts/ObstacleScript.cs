@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ObstacleScript : MonoBehaviour
 {
-    public float moveSpeed = 5;
+    public float moveSpeed;
     public float deadZone = -15;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
