@@ -9,6 +9,7 @@ public class ManagementScript : MonoBehaviour
     public FloorScript floor;
     public ObstacleScript obstacle;
     public float initMoveSpeed = 5;
+    public CatScript cat;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Update()
@@ -28,6 +29,13 @@ public class ManagementScript : MonoBehaviour
     public void gameOver()
     {
         gameOverScreen.SetActive(true);
+        foreach(FloorScript floor in FindObjectsOfType<FloorScript>()){
+                initMoveSpeed = 0;
+        }
+        foreach(ObstacleScript obstacle in FindObjectsOfType<ObstacleScript>()){
+                initMoveSpeed = 0;
+        }
+        
     }
 
     [ContextMenu("Increase Score")]
